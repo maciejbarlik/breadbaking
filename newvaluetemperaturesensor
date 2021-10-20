@@ -1,0 +1,5 @@
+if (data.temperature) {
+ this.gladys.event.emit(EVENTS.DEVICE.NEW_STATE, {
+  device_feature_external_id: `xiaomi:${sid}:temperature`,
+  state: Math.round(data.temperature / 10) / 10,
+ });
