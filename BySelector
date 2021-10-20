@@ -1,0 +1,4 @@
+const expandFields = buildExpandObject(req.query.expand);
+if (expandFields.temperature) {
+ room.temperature = await gladys.device.temperatureSensorManager.getTemperatureInRoom(room.id, {
+  unit: req.user.temperature_unit_preference,
