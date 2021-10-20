@@ -1,0 +1,3 @@
+function getTemperatureString (temperature) {
+  return parseFloat(temperature.temperature).toFixed(1);
+}
